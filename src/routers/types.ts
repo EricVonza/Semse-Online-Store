@@ -5,8 +5,14 @@ export interface LocationStates {
   "/home2"?: {};
   "/home3"?: {};
   "/product-detail"?: {};
+  "/filaments"?: {};
+  "/Printers"?: {};
+  "/accessories"?: {};
+
   "/product-detail-2"?: {};
   "/page-collection"?: {};
+  "/page-collection2"?: {};
+
   "/page-collection-2"?: {};
   "/page-search"?: {};
   "/home-header-2"?: {};

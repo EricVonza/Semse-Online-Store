@@ -178,12 +178,12 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/page-collection",
+    href: "/filaments",
     name: "Filaments",
   },
   {
     id: ncNanoId(),
-    href: "/page-collection",
+    href: "/page-collection2",
     name: "3D Printers",
   },
   {

@@ -14,7 +14,8 @@ import PageSubcription from "containers/PageSubcription/PageSubcription";
 import BlogPage from "containers/BlogPage/BlogPage";
 import BlogSingle from "containers/BlogPage/BlogSingle";
 import SiteHeader from "containers/SiteHeader";
-import PageCollection from "containers/PageCollection";
+import Filaments from "containers/Filaments";
+import 3DPrinters from "containers/3DPrinters";
 import PageSearch from "containers/PageSearch";
 import PageHome2 from "containers/PageHome/PageHome2";
 import PageHome3 from "containers/PageHome/PageHome3";
@@ -39,7 +40,7 @@ export const pages: Page[] = [
   { path: "/product-detail-2", component: ProductDetailPage2 },
   //
   { path: "/page-collection-2", component: PageCollection2 },
-  { path: "/page-collection", component: PageCollection },
+  { path: "/filaments", component: Filaments  },
   { path: "/page-search", component: PageSearch },
   //
   { path: "/account", component: AccountPage },
