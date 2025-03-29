@@ -52,7 +52,7 @@ const ArchiveFilterListBox: FC<ArchiveFilterListBoxProps> = ({
                   {({ selected }) => (
                     <>
                       <span
-                        className={`${
+                        className={`KES{
                           selected ? "font-medium" : "font-normal"
                         } block truncate`}
                       >

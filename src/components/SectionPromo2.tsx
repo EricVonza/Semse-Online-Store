@@ -32,16 +32,12 @@ const SectionPromo2: FC<SectionPromo2Props> = ({ className = "lg:pt-10" }) => {
             period and place.
           </span> */}
           <div className="flex space-x-2 sm:space-x-5 mt-6 sm:mt-12">
-            <ButtonPrimary>
-            <a
-    href="https://academy.innovatorsforge.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="dark:bg-slate-200 dark:text-slate-900 px-2 py-3 rounded-md inline-block"
-  />
-              Discover more
-            </ButtonPrimary>
-          </div>
+  <a href="https://academy.innovatorsforge.com/auth/sign-up" target="_blank" rel="noopener noreferrer">
+    <ButtonPrimary>
+      Discover more
+    </ButtonPrimary>
+  </a>
+</div>
         </div>
 
         <NcImage

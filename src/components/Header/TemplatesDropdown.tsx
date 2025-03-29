@@ -8,36 +8,46 @@ import { NavItemType } from "shared/Navigation/NavigationItem";
 
 export default function TemplatesDropdown() {
   const renderMegaMenuNavlink = (item: NavItemType) => {
+    const isExternal = item.href?.startsWith("http");
+
     return (
       <li key={item.id} className={`${item.isNew ? "menuIsNew" : ""}`}>
-        <NavLink
-          target={item.targetBlank ? "_blank" : undefined}
-          rel="noopener noreferrer"
-          className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
-          to={{
-            pathname: item.href || undefined,
-          }}
-        >
-          {item.name}
-        </NavLink>
+        {isExternal ? (
+          <a
+            href={item.href}
+            target={item.target || "_self"}
+            rel={item.target === "_blank" ? "noopener noreferrer" : undefined}
+            className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
+          >
+            {item.name}
+          </a>
+        ) : (
+          <NavLink
+            to={item.href as string}
+            className="font-normal text-slate-600 hover:text-black dark:text-slate-400 dark:hover:text-white"
+          >
+            {item.name}
+          </NavLink>
+        )}
       </li>
     );
   };
 
   return (
     <div className="TemplatesDropdown hidden lg:block">
-      <Popover className="">
-        {({ open, close }) => (
+      <Popover>
+        {({ open }) => (
           <>
             <Popover.Button
-              className={`
-                ${open ? "" : "text-opacity-80"}
-                group h-10 sm:h-12 px-3 py-1.5 inline-flex items-center text-sm text-gray-800 dark:text-slate-300 font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75`}
+              className={`group h-10 sm:h-12 px-3 py-1.5 inline-flex items-center text-sm text-gray-800 dark:text-slate-300 font-medium hover:text-opacity-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 ${
+                open ? "" : "text-opacity-80"
+              }`}
             >
-              <span className="">Templates</span>
+              <span>Templates</span>
               <ChevronDownIcon
-                className={`${open ? "-rotate-180" : ""}
-                  ml-1 h-4 w-4 transition ease-in-out duration-150 `}
+                className={`ml-1 h-4 w-4 transition-transform ${
+                  open ? "rotate-180" : ""
+                }`}
                 aria-hidden="true"
               />
             </Popover.Button>
@@ -55,8 +65,8 @@ export default function TemplatesDropdown() {
                   <div className="container">
                     <div className="flex text-sm border-t border-slate-200 dark:border-slate-700 py-14">
                       <div className="flex-1 grid grid-cols-4 gap-6 xl:gap-8 pr-6 xl:pr-8">
-                        {MEGAMENU_TEMPLATES.map((item, index) => (
-                          <div key={index}>
+                        {MEGAMENU_TEMPLATES.map((item) => (
+                          <div key={item.id}>
                             <p className="font-medium text-slate-900 dark:text-neutral-200">
                               {item.name}
                             </p>

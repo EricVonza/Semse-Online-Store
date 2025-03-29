@@ -6,20 +6,20 @@ import SectionSliderCollections from "components/SectionSliderLargeProduct";
 import SectionPromo1 from "components/SectionPromo1";
 import ProductCard from "components/ProductCard";
 import TabFilters from "./TabFilters";
-import { PRODUCTS } from "data/data";
+import { PRODUCTS } from "data/printers-catalogue";
 
 export interface PageCollectionProps {
   className?: string;
 }
 
-const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
+const Printers: FC<PageCollectionProps> = ({ className = "" }) => {
   return (
     <div
       className={`nc-PageCollection ${className}`}
       data-nc-id="PageCollection"
     >
       <Helmet>
-        <title>Collection || Ciseco Ecommerce Template</title>
+        <title>iForge | 3D Printer Store</title>
       </Helmet>
 
       <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
@@ -27,11 +27,11 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
           {/* HEADING */}
           <div className="max-w-screen-sm">
             <h2 className="block text-2xl sm:text-3xl lg:text-4xl font-semibold">
-              Bambu Filament
+              Bambu Lab Printers
             </h2>
             <span className="block mt-4 text-neutral-500 dark:text-neutral-400 text-sm sm:text-base">
-              Bwse our collection of Bambu Filament. We have a wide range of
-              colors and sizes to choose from.  
+              Browse our collection of Bambu Lab Printers. We have a wide range
+              to choose from.  
             </span>
           </div>
 
@@ -66,4 +66,4 @@ const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
   );
 };
 
-export default PageCollection;
+export default Printers;

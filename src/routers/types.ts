@@ -8,10 +8,13 @@ export interface LocationStates {
   "/filaments"?: {};
   "/Printers"?: {};
   "/accessories"?: {};
+  "/service-parts"?: {};
+
 
   "/product-detail-2"?: {};
   "/page-collection"?: {};
   "/page-collection2"?: {};
+
 
   "/page-collection-2"?: {};
   "/page-search"?: {};

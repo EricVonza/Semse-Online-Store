@@ -73,7 +73,7 @@ function PageHome() {
           subHeading="Best selling of the month"
         /> */}
 
-        <div className="relative py-24 lg:py-32">
+        {/* <div className="relative py-24 lg:py-32">
           <BackgroundSection />
           <div>
             <Heading rightDescText="">
@@ -81,12 +81,11 @@ function PageHome() {
             </Heading>
             <SectionMagazine5 />
             <div className="flex mt-16 justify-center">
-              {/* <ButtonSecondary>Show all blog articles</ButtonSecondary> */}
+              {/* <ButtonSecondary>Show all blog articles</ButtonSecondary> 
             </div>
           </div>
-        </div>
-
-        {/*  */}
+        </div> */}
+      
         <SectionClientSay />
       </div>
     </div>

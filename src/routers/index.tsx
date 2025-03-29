@@ -15,7 +15,9 @@ import BlogPage from "containers/BlogPage/BlogPage";
 import BlogSingle from "containers/BlogPage/BlogSingle";
 import SiteHeader from "containers/SiteHeader";
 import Filaments from "containers/Filaments";
-import 3DPrinters from "containers/3DPrinters";
+import Accessories from "containers/Accessories";
+import ServiceParts from "containers/ServiceParts";
+import Printers from "containers/3dprinter";
 import PageSearch from "containers/PageSearch";
 import PageHome2 from "containers/PageHome/PageHome2";
 import PageHome3 from "containers/PageHome/PageHome3";
@@ -39,8 +41,11 @@ export const pages: Page[] = [
   { path: "/product-detail", component: ProductDetailPage },
   { path: "/product-detail-2", component: ProductDetailPage2 },
   //
-  { path: "/page-collection-2", component: PageCollection2 },
+  { path: "/Printers", component: Printers },
   { path: "/filaments", component: Filaments  },
+  { path: "/accessories", component: Accessories  },
+  { path: "/service-parts", component: ServiceParts  },
+
   { path: "/page-search", component: PageSearch },
   //
   { path: "/account", component: AccountPage },

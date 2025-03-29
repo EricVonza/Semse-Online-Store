@@ -1,23 +1,25 @@
 import React, { FC } from "react";
 import { Helmet } from "react-helmet-async";
+import Pagination from "shared/Pagination/Pagination";
+import ButtonPrimary from "shared/Button/ButtonPrimary";
 import SectionSliderCollections from "components/SectionSliderLargeProduct";
 import SectionPromo1 from "components/SectionPromo1";
 import ProductCard from "components/ProductCard";
-import { PRODUCTS } from "data/data";
-import SidebarFilters from "./SidebarFilters";
+import TabFilters from "./TabFilters";
+import { PRODUCTS } from "data/accessories-data";
 
-export interface PageCollection2Props {
+export interface PageCollectionProps {
   className?: string;
 }
 
-const PageCollection2: FC<PageCollection2Props> = ({ className = "" }) => {
+const PageCollection: FC<PageCollectionProps> = ({ className = "" }) => {
   return (
     <div
-      className={`nc-PageCollection2 ${className}`}
-      data-nc-id="PageCollection2"
+      className={`nc-PageCollection ${className}`}
+      data-nc-id="PageCollection"
     >
       <Helmet>
-        <title>Category || Ciseco Ecommerce Template</title>
+        <title>iForge | Accessories Store</title>
       </Helmet>
 
       <div className="container py-16 lg:pb-28 lg:pt-20 space-y-16 sm:space-y-20 lg:space-y-28">
@@ -25,37 +27,36 @@ const PageCollection2: FC<PageCollection2Props> = ({ className = "" }) => {
           {/* HEADING */}
           <div className="max-w-screen-sm">
             <h2 className="block text-2xl sm:text-3xl lg:text-4xl font-semibold">
-              Man collection
+              Bambu Lab Accessories
             </h2>
             <span className="block mt-4 text-neutral-500 dark:text-neutral-400 text-sm sm:text-base">
-              We not only help you design exceptional products, but also make it
-              easy for you to share your designs with more like-minded people.
+              Browse our collection of Bambu Lab Accessories. We have a wide range of
+              parts to choose from.  
             </span>
           </div>
 
           <hr className="border-slate-200 dark:border-slate-700" />
           <main>
+            {/* TABS FILTER */}
+            {/* <TabFilters /> */}
+
             {/* LOOP ITEMS */}
-            <div className="flex flex-col lg:flex-row">
-              <div className="lg:w-1/3 xl:w-1/4 pr-4">
-                <SidebarFilters />
-              </div>
-              <div className="flex-shrink-0 mb-10 lg:mb-0 lg:mx-4 border-t lg:border-t-0"></div>
-              <div className="flex-1 ">
-                <div className="flex-1 grid sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-10 ">
-                  {PRODUCTS.map((item, index) => (
-                    <ProductCard data={item} key={index} />
-                  ))}
-                </div>
-              </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-10 mt-8 lg:mt-10">
+              {PRODUCTS.map((item, index) => (
+                <ProductCard data={item} key={index} />
+              ))}
             </div>
+
+            {/* PAGINATION */}
+              {/* <Pagination /> */}
+              {/* <ButtonPrimary loading>Show me more</ButtonPrimary> */}
           </main>
         </div>
 
         {/* === SECTION 5 === */}
         <hr className="border-slate-200 dark:border-slate-700" />
 
-        <SectionSliderCollections />
+        {/* <SectionSliderCollections /> */}
         <hr className="border-slate-200 dark:border-slate-700" />
 
         {/* SUBCRIBES */}
@@ -65,4 +66,4 @@ const PageCollection2: FC<PageCollection2Props> = ({ className = "" }) => {
   );
 };
 
-export default PageCollection2;
+export default PageCollection;

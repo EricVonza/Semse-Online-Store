@@ -23,8 +23,8 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
       { id: ncNanoId(), href: "/page-collection-2", name: "Category Page 2" },
       { id: ncNanoId(), href: "/product-detail", name: "Product Page 1" },
       { id: ncNanoId(), href: "/product-detail-2", name: "Product Page 2" },
-      /* { id: ncNanoId(), href: "/cart", name: "Cart Page" },
-      { id: ncNanoId(), href: "/checkout", name: "Checkout Page" }, */
+      { id: ncNanoId(), href: "/cart", name: "Cart Page" },
+      { id: ncNanoId(), href: "/checkout", name: "Checkout Page" }, 
     ],
   },
   {
@@ -32,9 +32,9 @@ export const MEGAMENU_TEMPLATES: NavItemType[] = [
     href: "/",
     name: "Other Pages",
     children: [
-      /*{ id: ncNanoId(), href: "/checkout", name: "Checkout Page" },
+      { id: ncNanoId(), href: "/checkout", name: "Checkout Page" },
       { id: ncNanoId(), href: "/page-search", name: "Search Page" },
-      { id: ncNanoId(), href: "/cart", name: "Cart Page" }, */
+      { id: ncNanoId(), href: "/cart", name: "Cart Page" }, 
       { id: ncNanoId(), href: "/account", name: "Accout Page" },
       { id: ncNanoId(), href: "/account-my-order", name: "Order Page" },
       { id: ncNanoId(), href: "/subscription", name: "Subscription" },
@@ -102,7 +102,7 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
       },
     ],
   },
- /* {
+ {
     id: ncNanoId(),
     href: "/cart",
     name: "Cart Page",
@@ -116,7 +116,7 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
     id: ncNanoId(),
     href: "/page-search",
     name: "Search Page",
-  }, */
+  }, 
   {
     id: ncNanoId(),
     href: "/account",
@@ -183,20 +183,27 @@ export const NAVIGATION_DEMO_2: NavItemType[] = [
   },
   {
     id: ncNanoId(),
-    href: "/page-collection2",
+    href: "/printers",
     name: "3D Printers",
   },
   {
     id: ncNanoId(),
-    href: "/page-collection-2",
+    href: "/accessories",
     name: "Accessories",
   },
 
   {
     id: ncNanoId(),
-    href: "/page-collection-2",
+    href: "/service-parts" , 
+    name: "Service Parts",
+  },
+  {
+    id: ncNanoId(),
+    href: "https://academy.innovatorsforge.com/auth/sign-up" ,
+    target:"_blank", // Type assertion
     name: "Academy",
   },
+
   /*{
     id: ncNanoId(),
     href: "/page-search",

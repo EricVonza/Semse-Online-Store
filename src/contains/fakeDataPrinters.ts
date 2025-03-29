@@ -33,63 +33,6 @@ import product21 from "images/products/21.png";
 import product22 from "images/products/22.png";
 import product23 from "images/products/23.png";
 import product24 from "images/products/24.png";
-import product25 from "images/products/2.png";
-import product26 from "images/products/3.png";
-import product27 from "images/products/4.png";
-import product28 from "images/products/5.png";
-import product29 from "images/products/6.png";
-import product30 from "images/products/7.png";
-import product31 from "images/products/8.png";
-import product32 from "images/products/9.png";
-import product33 from "images/products/5.png";
-import product34 from "images/products/ams-lite.png";
-import product35 from "images/products/ams-lite-x1c-p1s.png";
-import product36 from "images/products/heatbed-a1-mini.png";
-import product37 from "images/products/touch-screen-a1.png";
-import product38 from "images/products/th-board.png";
-import product39 from "images/products/ams-lite-hub-filament.png";
-import product40 from "images/products/ams-rotary-spool-holder-green.png";
-import product41 from "images/products/ams-rotary-spool-holder-orange.png";
-import product42 from "images/products/x-axis-assembly.png";
-import product43 from "images/products/purge-wiper.png";
-import product44 from "images/products/filament-sensor.png";
-import product45 from "images/products/p1s-touch-sreen.png";
-import product46 from "images/products/hotend-nozzle-0.4mm-stainless-steel-a1-series.png";
-import product47 from "images/products/hotend-nozzle-0.4mm-with-hardened-end-stainless-steel-a1-series.png";
-import product48 from "images/products/hotend-heating-assembly.png";
-import product49 from "images/products/extruder-gear-assembly.png";
-import product50 from "images/products/bambu-micro-lidar.png";
-import product51 from "images/products/type-c-usb-cable.png";
-import product52 from "images/products/mc-board.png";
-import product53 from "images/products/chamber-camera-x1c.png";
-import product54 from "images/products/front-glass-door.png";
-import product55 from "images/products/cooling-hotend-p1p.png";
-import product56 from "images/products/cooling-hotend-x1c.png";
-import product57 from "images/products/a1-mini-board.png";
-import product58 from "images/products/ams-active-extrusion-wheel.png";
-import product59 from "images/products/ams-feeding-unit.png";
-import product60 from "images/products/ams-internal-hub-unit.png";
-import product61 from "images/products/ams-internal-hub-motor.png";
-import product62 from "images/products/ams-main-board-v2.png";
-import product63 from "images/products/ap-board.png";
-import product64 from "images/products/dessicant.png";
-import product65 from "images/products/extruder-unit.png";
-import product66 from "images/products/filament-buffer.png";
-import product67 from "images/products/heat-bed-signal-cable.png";
-import product68 from "images/products/heat-bed-unit-v3.png";
-import product69 from "images/products/ptef-tube.png";
-import product70 from "images/products/ptfe-tube-ams-hub.png";
-import product71 from "images/products/ptfe-tubes.png";
-import product72 from "images/products/th-board-set-v9.png";
-
-
-
-
-
-
-
-
-
 //
 export const productImgs = [
   product1,
@@ -116,56 +59,6 @@ export const productImgs = [
   product22,
   product23,
   product24,
-  product25,
-  product26,
-  product27,
-  product28,
-  product29,
-  product30,
-  product31,
-  product32,
-  product33,
-  product34,
-  product35,
-  product36,
-  product37,
-  product38,
-  product39,
-  product40,
-  product41,
-  product42,
-  product43,
-  product44,
-  product45,
-  product46,
-  product47,
-  product48,
-  product49,
-  product50,
-  product51,
-  product52,
-  product53,
-  product54,
-  product55,
-  product56, 
-  product57,
-  product58,
-  product59,
-  product60,
-  product61,
-  product62,
-  product63,
-  product64,
-  product65,
-  product66,
-  product67,
-  product68,
-  product69,
-  product70,
-  product71,
-  product72,
-
-
 ];
 
 export const nftsAbstracts = [
